@@ -1,0 +1,7 @@
+:root{
+    --primary-cream:#FFFDF8;
+
+}
+body{
+    background-color: var(--primary-cream);
+}

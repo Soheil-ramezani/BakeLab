@@ -1,0 +1,23 @@
+/* font-family: Tangrine */
+@font-face {
+    font-family: TangrineBold;
+    src: url(/Fonts/Tangerine/Tangerine-Bold.ttf);
+}
+@font-face {
+    font-family: Tangrine;
+    src: url(/Fonts/Tangerine/Tangerine-Regular.ttf);
+}
+/*  font-family:BeauRivage */
+@font-face {
+    font-family:BeauRivage ;
+    src: url(/Fonts/Beau_Rivage/BeauRivage-Regular.ttf);
+}
+/* font-family:Montserrat */
+@font-face {
+    font-family:Montserrat;
+    src: url(/Fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family:MontserratBold ;
+    src: url(/Fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
