@@ -10,7 +10,7 @@ export default function Navbar() {
         {/* Logo part */}
         <div className='flex flex-col justify-center items-center'>
           <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.58334 20.7204C2.58334 19.9441 2.75514 19.1736 3.21045 18.5452C4.54991 16.6949 8.18336 12.9167 15.5 12.9167C22.8173 12.9167 26.4501 16.6955 27.7896 18.5452C28.2449 19.1736 28.4167 19.9441 28.4167 20.7204C28.4167 22.0764 27.878 23.3769 26.9191 24.3358C25.9602 25.2947 24.6597 25.8334 23.3036 25.8334H7.69641C6.34034 25.8334 5.03981 25.2947 4.08093 24.3358C3.12204 23.3769 2.58334 22.0764 2.58334 20.7204V20.7204Z" stroke="black" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+            <path d="M2.58334 20.7204C2.58334 19.9441 2.75514 19.1736 3.21045 18.5452C4.54991 16.6949 8.18336 12.9167 15.5 12.9167C22.8173 12.9167 26.4501 16.6955 27.7896 18.5452C28.2449 19.1736 28.4167 19.9441 28.4167 20.7204C28.4167 22.0764 27.878 23.3769 26.9191 24.3358C25.9602 25.2947 24.6597 25.8334 23.3036 25.8334H7.69641C6.34034 25.8334 5.03981 25.2947 4.08093 24.3358C3.12204 23.3769 2.58334 22.0764 2.58334 20.7204V20.7204Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M7.75 5.8125V8.39583" stroke="black" strokeWidth="2" strokeLinecap="round" />
             <path d="M9.04169 14.2084V16.7917" stroke="black" strokeWidth="2" strokeLinecap="round" />
             <path d="M23.25 5.8125V8.39583" stroke="black" strokeWidth="2" strokeLinecap="round" />
