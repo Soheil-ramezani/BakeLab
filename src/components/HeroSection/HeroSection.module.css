@@ -1,0 +1,13 @@
+.hero_title__h1 {
+  font-family: Tangrine;
+}
+.hero_title__h3 {
+  font-family: BeauRivage;
+}
+.hero__button {
+  background-color: var(--deep-brown);
+  color: var(--white);
+}
+.hero__p {
+  color: var(--gray);
+}

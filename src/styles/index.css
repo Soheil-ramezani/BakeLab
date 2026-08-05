@@ -1,6 +1,10 @@
 @import "tailwindcss";
 :root{
     --primary-cream:#FFFDF8;
+    --cream:#FBEDCA;
+    --deep-brown:#313131;
+    --white:#FFFFFF;
+    --gray:#7E7E7E;
 
 }
 body{
