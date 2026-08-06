@@ -11,3 +11,9 @@
 .hero__p {
   color: var(--gray);
 }
+.hero_Pics__img {
+  min-width: 370px;
+  width: 80%;
+  height: 444px;
+  border-radius: 10px;
+}
