@@ -1,0 +1,53 @@
+.windmill_slider {
+  position: relative;
+  width: 370px;
+  height: 444px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: center center;
+}
+
+.slide.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.slide.spin_out {
+  animation: spinOut 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide.spin_in {
+  animation: spinIn 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes spinOut {
+  from {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(150px) rotateY(-90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinIn {
+  from {
+    transform: translateX(150px) rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+}

@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`${styles.Nav__section} sticky flex flex-row items-center justify-between px-[10%] mt-5 mx-[1.5%]`}>
+      <nav className={`${styles.Nav__section} sticky flex flex-row items-center justify-between px-[10%] mt-5 mx-[1.5%] z-10`}>
         {/* Logo part */}
         <div className='flex flex-col justify-center items-center'>
           <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
