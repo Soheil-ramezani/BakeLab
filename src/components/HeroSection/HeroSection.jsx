@@ -27,7 +27,6 @@ export default function HeroSection() {
       <div className={`w-1/2  flex items-center justify-center`} >
         <ImageSlider images={SweetsImages} />
       </div>
-
     </section>
   )
 }
