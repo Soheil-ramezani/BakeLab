@@ -20,7 +20,7 @@ export default function HeroSection() {
           <pre>See Menu</pre>
         </button>
         <p className={`${styles.hero__p} text-[14px] mt-4`}>* 10% off on first order</p>
-<<<<<<< HEAD
+
       </div>
 
 
@@ -28,18 +28,6 @@ export default function HeroSection() {
       <div className={`w-1/2  flex items-center justify-center`} >
         <ImageSlider images={SweetsImages} />
       </div>
-<<<<<<< HEAD
-=======
-
-=======
-        {/* pictures */}
-        <div className={`w-full grid grid-cols-[repeat(auto-fit,minmax(370px,1fr))] items-center justify-items-center gap-3  `}>
-          <img className={`${styles.hero_Pics__img}`} src="/images/JPG/greenSweet.jpg" alt="greenSweet"/>
-          <img className={`${styles.hero_Pics__img} xl:mt-[30%]`} src="/images/JPG/PinkSweet.jpg" alt="greenSweet"/>
-          <img className={`${styles.hero_Pics__img}`} src="/images/JPG/yellowSweets.jpg" alt="greenSweet"/>
-        </div>
->>>>>>> 7ec773a25e77cfa6396d61baf905b9733841f310
->>>>>>> 847d30186d82a8afa32b59762c69e43e380ac749
     </section>
   )
 }
