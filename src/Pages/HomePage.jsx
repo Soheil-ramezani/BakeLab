@@ -5,9 +5,7 @@ import Offers from '../components/Offers/Offers'
 export default function HomePage() {
   return (
     <>
-    <header>
       <Navbar/>    
-    </header>
     <main>
       <HeroSection/>
       <Offers/>
