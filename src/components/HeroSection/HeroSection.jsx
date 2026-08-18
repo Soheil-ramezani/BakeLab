@@ -1,12 +1,9 @@
 import styles from './HeroSection.module.css'
 import ImageSlider from '../ImageSlider/ImageSlider'
+import { useState } from 'react'
+import HeroSectionPictures from '/src/Data/HeroSectionsPictures'
 export default function HeroSection() {
-  const SweetsImages = [
-    { id: 1, src: "images/JPG/greenSweet.jpg", alt: "greenSweet" },
-    { id: 2, src: "images/JPG/PinkSweet.jpg", alt: "PinkSweet" },
-    { id: 3, src: "images/JPG/yellowSweets.jpg", alt: "yellowSweets" },
-
-  ]
+  const [SweetsImages ]= useState(HeroSectionPictures)
   return (
     <section className={`flex flex-row mt-28 items-center `}>
       <div className='w-3/5 flex flex-col items-center justify-center'>
