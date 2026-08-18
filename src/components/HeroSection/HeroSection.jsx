@@ -9,7 +9,7 @@ export default function HeroSection() {
   ]
   return (
     <section className={`flex flex-row mt-28 items-center `}>
-      <div className='w-1/2 flex flex-col items-center justify-center'>
+      <div className='w-3/5 flex flex-col items-center justify-center'>
         <h1 className={`${styles.hero_title__h1} text-7xl text-center mx-[5%]`}>
           Master the Art, Taste the Craft
         </h1>
@@ -25,7 +25,7 @@ export default function HeroSection() {
 
 
       {/* pictures */}
-      <div className={`w-1/2  flex items-center justify-center`} >
+      <div className={`w-2/5  flex items-center justify-center`} >
         <ImageSlider images={SweetsImages} />
       </div>
     </section>
