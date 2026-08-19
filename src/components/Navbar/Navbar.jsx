@@ -19,7 +19,7 @@ export default function Navbar() {
             <path d="M15.5 12.9167V18.0834" stroke="black" strokeWidth="2" strokeLinecap="round" />
             <path d="M25.8334 16.432C23.8351 14.7122 20.5427 12.9167 15.5 12.9167C10.4574 12.9167 7.1649 14.7115 5.16669 16.432" stroke="black" strokeWidth="2" strokeLinecap="round" />
           </svg>
-          <p className={` ${styles.Nav_logo__p} text-center `}>Grandma’s<br />Bakery</p>
+          <p className={` ${styles.Nav_logo__p} text-center font-bold `}>BakeLab</p>
         </div>
         {/* Navbar-Links */}
         <div>
@@ -31,12 +31,12 @@ export default function Navbar() {
             <li className={`${styles.nav_links__li}`}>Contact</li>
           </ul>
           {/* Hamburger */}
-          <button className={`${styles.hamburgerMenu__button}`} onClick={()=>{setShowHamburgerMenu(true)}}><GiHamburgerMenu style={{ width: "30px", height: "30px" }} /></button>
+          <button className={`${styles.hamburgerMenu__button} `} onClick={()=>{setShowHamburgerMenu(true)}}><GiHamburgerMenu style={{ width: "30px", height: "30px" }} /></button>
 
         </div>
 
       </nav>
-      <div className={`${styles.hamburgerMenu__div}`} style={{ width: showHamburgerMenu ? '30%' : '0',minWidth: showHamburgerMenu? 'fit-content' : '0' }} >
+      <div className={`${styles.hamburgerMenu__div} z-20`} style={{ width: showHamburgerMenu ? '30%' : '0',minWidth: showHamburgerMenu? 'fit-content' : '0' }} >
         <button className={`${styles.hamburgerMenu_close__button}`} onClick={()=>{setShowHamburgerMenu(false)}}>
           &times;
         </button>
