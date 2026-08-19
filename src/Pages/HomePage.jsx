@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
 import Offers from '../components/Offers/Offers'
-
+import AboutSection from '../components/About/AboutSection'
 export default function HomePage() {
   return (
     <>
@@ -9,6 +9,7 @@ export default function HomePage() {
     <main>
       <HeroSection/>
       <Offers/>
+      <AboutSection/>
     </main>
       
     </>
