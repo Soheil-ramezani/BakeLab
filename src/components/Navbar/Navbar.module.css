@@ -11,12 +11,15 @@
 }
 .nav_links__li {
   font-size: 16px;
-  transition: 2s;
+  transition: 0.5s ease-in;
 }
 .nav_links__li:hover {
-  font-size: 18px;
+  font-size:17px;
   font-family: MontserratBold;
+  border-bottom: 2px solid var(--deep-brown);
 }
+
+/*  */
 .hamburgerMenu__div {
   height: 100%;
   position: fixed;
