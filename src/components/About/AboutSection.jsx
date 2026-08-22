@@ -2,7 +2,7 @@ import styles from './AboutSection.module.css'
 
 export default function AboutSection() {
     return (
-        <section className={` ${styles.about__section}  sm:bg-(--cream) flex flex-row max-h-[481px] mb-56`}>
+        <section className={` ${styles.about__section}  sm:bg-(--cream) flex flex-row max-h-[481px] mb-12`}>
             {/* left side = img */}
             <div className={`${styles.about_img__div} md:w-2/5`}>
                 <img src="/public/images/JPG/aboutBakery.jpg" alt="BakeLabBakery" className={`${styles.about__img}`} />
