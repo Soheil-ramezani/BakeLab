@@ -11,6 +11,9 @@ body{
     background-color: var(--primary-cream);
     font-family: Montserrat;
 }
+h2{
+    font-size: clamp(25px,10vw,36px);
+}
 /* 
 media screen's size
 mobile:320px~767px

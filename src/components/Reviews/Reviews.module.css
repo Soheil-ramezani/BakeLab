@@ -1,0 +1,8 @@
+.card__img{
+width: 180px;
+height: 180px;
+border-radius: 50%;
+}
+.review_card_icon__img{
+    cursor: pointer;
+}
