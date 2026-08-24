@@ -5,7 +5,7 @@
     --deep-brown:#313131;
     --white:#FFFFFF;
     --gray:#7E7E7E;
-
+    --navy-blue:#050706;
 }
 body{
     background-color: var(--primary-cream);
