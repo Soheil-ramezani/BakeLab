@@ -3,6 +3,7 @@ import HeroSection from '../components/HeroSection/HeroSection'
 import Offers from '../components/Offers/Offers'
 import AboutSection from '../components/About/AboutSection'
 import Reviews from '../components/Reviews/Reviews'
+import Footer from '../components/footer/Footer'
 export default function HomePage() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function HomePage() {
       <AboutSection/>
       <Reviews/>
     </main>
-      
+      <Footer/>
     </>
   )
 }
