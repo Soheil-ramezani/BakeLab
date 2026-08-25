@@ -1,3 +1,18 @@
+.footer_link__a{
+    background-color: var(--navy-blue); 
+    transition:0.6s ease-in-out ;
+}
+.footer_link__svg{
+    stroke: var(--cream);
+    margin: 5px;
+
+}
+.footer_link__a:hover{
+    background-color: var(--cream);
+}
+.footer_link__a:hover .footer_link__svg{
+    stroke: var(--navy-blue);
+}
 /* From Uiverse.io by vinodjangid07 */ 
 .input_wrapper {
   width: fit-content;
