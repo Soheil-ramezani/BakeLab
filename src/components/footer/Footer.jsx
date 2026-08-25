@@ -3,8 +3,9 @@ import styles from './Footer.module.css'
 export default function Footer() {
   return (
     <footer className={`bg-(--navy-blue) text-white flex flex-row justify-around items-start px-[1%] py-[2.5%] mt-12`}>
+      {/* Logo & socialMedia links */}
       <div className={`flex flex-col items-start justify-center gap-2.5`}>
-        <div >
+        <div className={`flex flex-col items-center justify-center`}>
           <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.58334 20.7204C2.58334 19.9441 2.75514 19.1736 3.21045 18.5452C4.54991 16.6949 8.18336 12.9167 15.5 12.9167C22.8173 12.9167 26.4501 16.6955 27.7896 18.5452C28.2449 19.1736 28.4167 19.9441 28.4167 20.7204C28.4167 22.0764 27.878 23.3769 26.9191 24.3358C25.9602 25.2947 24.6597 25.8334 23.3036 25.8334H7.69641C6.34034 25.8334 5.03981 25.2947 4.08093 24.3358C3.12204 23.3769 2.58334 22.0764 2.58334 20.7204V20.7204Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M7.75 5.8125V8.39583" stroke="white" strokeWidth="2" strokeLinecap="round" />
@@ -17,9 +18,7 @@ export default function Footer() {
           </svg>
           <p className={`text-center font-bold `}>BakeLab</p>
         </div>
-        <p className={`max-w-[300px]`}>The proper Footer on proper time can
-          preserve you protection. We assist you
-          make sureeverybody forward.</p>
+        <p className={`max-w-[300px]`}>Discover artisan breads crafted with passion and master baking techniques through our expert-led courses</p>
         <div className={` w-4/5 flex flex-row items-center justify-around`}>
           {/* Facebook */}
           <a href="#" title="Follow us on Facebook " className={`${styles.footer_link__a} h-full   w-auto rounded-full`}  >
@@ -39,7 +38,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      {/* Footer links */}
+      {/* Footer Quick links */}
       <ul className={`flex flex-col items-start gap-2`}>
         <li className='text-xl  border-b-2 border-b-[var(--cream)] '>Quick link</li>
         <li className='text-lg'> <a href="#">Home</a> </li>
