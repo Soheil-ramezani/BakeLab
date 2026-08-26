@@ -1,28 +1,86 @@
-.footer_link__a{
-    background-color: var(--navy-blue); 
-    transition:0.6s ease-in-out ;
+.footer_link__a {
+  background-color: var(--navy-blue);
+  transition: 0.6s ease-in-out;
 }
-.footer_link__svg{
-    stroke: var(--cream);
-    margin: 5px;
+.footer_link__svg {
+  stroke: var(--cream);
+  margin: 5px;
+}
+.footer_link__a:hover {
+  background-color: var(--cream);
+}
+.footer_link__a:hover .footer_link__svg {
+  stroke: var(--navy-blue);
+}
+@media (max-width: 1150px) {
+  .footer_Quick_links__ul {
+    display: none;
+  }
+}
+@media (min-width: 1150px) {
+  .footer_Quick_links__ul {
+    display: flex;
+  }
+}
 
+@media (max-width: 950px) {
+  .footer_Contact__ul {
+    display: none;
+  }
+  .footer_link2__a {
+    display: inline;
+  }
 }
-.footer_link__a:hover{
-    background-color: var(--cream);
+@media (min-width: 950px) {
+  .footer_Contact__ul {
+    display: flex;
+  }
+  .footer_link2__a {
+    display: none;
+  }
 }
-.footer_link__a:hover .footer_link__svg{
-    stroke: var(--navy-blue);
+@media (max-width: 767px) {
+  .footer_Email__div,
+  .footer_Logo_text__p {
+    display: none;
+  }
 }
-/* From Uiverse.io by vinodjangid07 */ 
+@media (min-width: 767px) {
+  .footer_Email__div,
+  .footer_Logo_text__p {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .footer_Email2__div {
+    display: flex;
+  }
+}
+@media (min-width: 767px) {
+  .footer_Email2__div {
+    display: none;
+  }
+}
+@media (width< 330px) {
+  .input_wrapper {
+    display: none;
+  }
+}
+@media (width> 330px) {
+  .input_wrapper {
+    display: flex;
+  }
+}
+
+/* From Uiverse.io by vinodjangid07 */
 .input_wrapper {
   width: fit-content;
   height: 45px;
   border-radius: 20px;
   padding: 5px;
   box-sizing: content-box;
-  display: flex;
   align-items: center;
-  background-color: var( --cream);
+  background-color: var(--cream);
 }
 
 .icon {
@@ -37,12 +95,12 @@
   border: none;
   outline: none;
   padding-left: 15px;
-  background-color: var( --cream);
+  background-color: var(--cream);
   color: var(--navy-blue);
   font-size: 1em;
 }
 .input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px var( --cream) inset;
+  -webkit-box-shadow: 0 0 0px 1000px var(--cream) inset;
   -webkit-text-fill-color: var(--navy-blue);
 }
 .Subscribe_btn {
@@ -50,7 +108,7 @@
   width: 95px;
   border: none;
   border-radius: 15px;
-  color: var( --cream);
+  color: var(--cream);
   cursor: pointer;
   background-color: var(--navy-blue);
   font-weight: 500;
