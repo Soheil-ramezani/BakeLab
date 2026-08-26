@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`${styles.Nav__section} sticky flex flex-row items-center justify-between px-[10%] mt-5 mx-[1.5%] z-10`}>
+      <nav className={`${styles.Nav__section} sticky flex flex-row items-center justify-between px-[10%] z-10`}>
         {/* Logo part */}
         <div className='flex flex-col justify-center items-center'>
           <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,11 +24,11 @@ export default function Navbar() {
         {/* Navbar-Links */}
         <div>
           {/* wideScreens */}
-          <ul className={`${styles.nav_links__ul}  flex-row gap-8`}>
-            <li className={`${styles.nav_links__li}`}>Home</li>
-            <li className={`${styles.nav_links__li}`}>About</li>
-            <li className={`${styles.nav_links__li}`}>Menu</li>
-            <li className={`${styles.nav_links__li}`}>Contact</li>
+          <ul className={`${styles.nav_links__ul} h-full  flex-row items-center  gap-8`}>
+            <li className={`${styles.nav_links__li}`}><a href='#'>Home</a></li>
+            <li className={`${styles.nav_links__li}`}><a href='#'>About</a></li>
+            <li className={`${styles.nav_links__li}`}><a href='#'>Menu</a></li>
+            <li className={`${styles.nav_links__li}`}><a href='#'>Contact</a></li>
           </ul>
           {/* Hamburger */}
           <button className={`${styles.hamburgerMenu__button} `} onClick={()=>{setShowHamburgerMenu(true)}}><GiHamburgerMenu style={{ width: "30px", height: "30px" }} /></button>
