@@ -1,5 +1,7 @@
 .hero_title__h1 {
   font-family: Tangrine;
+  font-size: clamp(50px, 6vw, 90px);
+  border-bottom: 2px solid var(--navy-blue);
 }
 .hero_title__h3 {
   font-family: BeauRivage;

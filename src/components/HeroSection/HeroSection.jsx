@@ -5,9 +5,9 @@ import HeroSectionPictures from '/src/Data/HeroSectionsPictures'
 export default function HeroSection() {
   const [SweetsImages ]= useState(HeroSectionPictures)
   return (
-    <section className={`flex flex-row mt-28 items-center `}>
-      <div className='w-3/5 flex flex-col items-center justify-center'>
-        <h1 className={`${styles.hero_title__h1} text-7xl text-center mx-[5%]`}>
+    <section className={`flex flex-row mt-5 md:px-[1%] items-center `}>
+      <div className='w-full md:w-3/5 flex flex-col items-center justify-center'>
+        <h1 className={`${styles.hero_title__h1}  text-center mx-[5%] mb-5`}>
           Master the Art, Taste the Craft
         </h1>
         <h3 className={`${styles.hero_title__h3} text-3xl text-center mx-[5%]`}>
@@ -22,7 +22,7 @@ export default function HeroSection() {
 
 
       {/* pictures */}
-      <div className={`w-2/5  flex items-center justify-center`} >
+      <div className={`w-2/5  hidden md:flex items-center justify-center`} >
         <ImageSlider images={SweetsImages} />
       </div>
     </section>
