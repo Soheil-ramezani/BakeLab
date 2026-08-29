@@ -29,7 +29,8 @@ export default function Reviews() {
 
       <div className="card w-full lg:px-[2.5%] px-[1%] flex md:flex-row flex-col justify-around items-center  mt-[5%]">
         {/* before icon */}
-        <img src="/images/favIcons/ChevronLeft2.svg" alt="" className={`${styles.review_card_icon__img} md:inline hidden w-[5%] h-[8%] `} onClick={previousUser} />
+        {/* <img src="/images/favIcons/ChevronLeft2.svg" alt="" className={`${styles.review_card_icon__img} md:inline hidden w-[5%] h-[8%] `} onClick={previousUser} /> */}
+        <svg xmlns="http://www.w3.org/2000/svg" className={`${styles.review_card_icon__img} md:inline hidden w-[5%] h-[8%] `} onClick={previousUser} viewBox="0 0 24 24" fill="none" stroke="#FBEDCA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
         {/* card body */}
         <div className={` flex sm:flex-row flex-col items-center justify-center  gap-8`}>
 
@@ -42,11 +43,14 @@ export default function Reviews() {
 
         </div>
         {/* next icon */}
-        <img src="/images/favIcons/ChevronRight2.svg" alt="" className={`${styles.review_card_icon__img} md:inline hidden w-[5%] h-[8%] `} onClick={nextUser} />
+        {/* <img src="/images/favIcons/ChevronRight2.svg" alt="" className={`${styles.review_card_icon__img} md:inline hidden w-[5%] h-[8%] `} onClick={nextUser} /> */}
+                <svg xmlns="http://www.w3.org/2000/svg" className={`${styles.review_card_icon__img} md:inline hidden w-[5%] h-[8%] `} onClick={nextUser} viewBox="0 0 24 24" fill="none" stroke="#FBEDCA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
         {/* next & before for screen< */}
         <div className={` md:hidden  w-full flex flex-row justify-center items-center gap-10 `}>
-          <img src="/images/favIcons/ChevronLeft2.svg" alt="" className={`${styles.review_card_icon2__img} w-[5%] h-[8%] `} onClick={previousUser} />
-          <img src="/images/favIcons/ChevronRight2.svg" alt="" className={`${styles.review_card_icon2__img} w-[5%] h-[8%] `} onClick={nextUser} />
+          {/* <img src="/images/favIcons/ChevronLeft2.svg" alt="" className={`${styles.review_card_icon2__img} w-[5%] h-[8%] `} onClick={previousUser} /> */}
+          <svg xmlns="http://www.w3.org/2000/svg" className={`${styles.review_card_icon2__img} w-[5%] h-[8%] `} onClick={previousUser}  viewBox="0 0 24 24" fill="none" stroke="#FBEDCA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+          {/* <img src="/images/favIcons/ChevronRight2.svg" alt="" className={`${styles.review_card_icon2__img} w-[5%] h-[8%] `} onClick={nextUser} /> */}
+         <svg xmlns="http://www.w3.org/2000/svg" className={`${styles.review_card_icon2__img} w-[5%] h-[8%] `} onClick={nextUser}  viewBox="0 0 24 24" fill="none" stroke="#FBEDCA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
 
         </div>
       </div>
