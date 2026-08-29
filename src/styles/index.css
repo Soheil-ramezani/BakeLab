@@ -7,6 +7,9 @@
     --gray:#7E7E7E;
     --navy-blue:#050706;
 }
+html{
+    scrollbar-width: none;
+}
 body{
     background-color: var(--primary-cream);
     font-family: Montserrat;
