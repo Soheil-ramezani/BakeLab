@@ -5,7 +5,7 @@ import HeroSectionPictures from '/src/Data/HeroSectionsPictures'
 export default function HeroSection() {
   const [SweetsImages ]= useState(HeroSectionPictures)
   return (
-    <section className={`flex flex-row mt-5 md:px-[1%] items-center `}>
+    <section className={`h-screen flex flex-row  md:px-[1%] items-center `}>
       <div className='w-full md:w-3/5 flex flex-col items-center justify-center'>
         <h1 className={`${styles.hero_title__h1}  text-center mx-[5%] mb-5`}>
           Master the Art, Taste the Craft
