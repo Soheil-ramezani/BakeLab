@@ -5,7 +5,7 @@ export default function AboutSection() {
         <section className={` ${styles.about__section}  sm:bg-(--cream) flex flex-row max-h-[481px] mb-12`}>
             {/* left side = img */}
             <div className={`${styles.about_img__div} md:w-2/5`}>
-                <img src="/public/images/JPG/aboutBakery.jpg" alt="BakeLabBakery" className={`${styles.about__img}`} />
+                <img src="images/JPG/aboutBakery.jpg" alt="BakeLabBakery" className={`${styles.about__img}`} />
             </div>
             {/* right side = texts  */}
             <div  className={`${styles.about_text__div} py-[10%] md:w-3/5 flex flex-col items-center justify-center gap-6`}>
