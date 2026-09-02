@@ -1,0 +1,974 @@
+// coursesData.js
+
+const coursesData = [
+    // ===========================
+    // 🍞 BREAD DEPARTMENT
+    // ===========================
+    {
+        id: 1,
+        title: "Sourdough Masterclass: From Starter to Loaf",
+        slug: "sourdough-masterclass",
+        category: "bread",
+        subcategory: "artisan",
+        description:
+            "Master the ancient art of sourdough baking from scratch. Learn how to create and maintain a wild yeast starter, understand fermentation science, and bake stunning rustic European-style loaves with open crumb and crispy crust.",
+        shortDescription:
+            "The ultimate sourdough journey — from building your first starter to baking bakery-quality loaves at home.",
+        instructor: {
+            name: "Daniel Hartwell",
+            expertise: "Artisan Breads & Natural Fermentation",
+            rating: 4.9,
+        },
+        level: "intermediate",
+        duration: {
+            total: "20 hours",
+            sessions: 10,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 89,
+            discounted: 69,
+            currency: "USD",
+            hasDiscount: true,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 1245,
+        rating: 4.8,
+        reviews: 389,
+        lessons: [
+            {
+                id: 1,
+                title: "Introduction to Wild Yeast & Sourdough History",
+                duration: "45 min",
+                isFree: true,
+                videoUrl: "/videos/sourdough/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Building Your Starter: Day 1–7",
+                duration: "1 hr 15 min",
+                isFree: true,
+                videoUrl: "/videos/sourdough/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Understanding Hydration & Flour Types",
+                duration: "1 hr",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "Mixing, Autolyse & Bulk Fermentation",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Shaping Techniques: Boule & Batard",
+                duration: "1 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-05.mp4",
+            },
+            {
+                id: 6,
+                title: "Scoring Patterns & Oven Spring",
+                duration: "1 hr",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-06.mp4",
+            },
+            {
+                id: 7,
+                title: "Baking with Dutch Oven vs. Steam Injection",
+                duration: "1 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-07.mp4",
+            },
+            {
+                id: 8,
+                title: "Country Loaf with Whole Wheat & Rye",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-08.mp4",
+            },
+            {
+                id: 9,
+                title: "Troubleshooting: Dense Crumb, Flat Loaves & More",
+                duration: "1 hr",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-09.mp4",
+            },
+            {
+                id: 10,
+                title: "Maintaining Your Starter for Life",
+                duration: "45 min",
+                isFree: false,
+                videoUrl: "/videos/sourdough/lesson-10.mp4",
+            },
+        ],
+        tags: ["sourdough", "artisan bread", "fermentation", "rustic"],
+        image: "/images/Courses/1.png",
+        isFeatured: true,
+        status: "active",
+        startDate: "2026-09-15",
+        prerequisites: ["Basic familiarity with baking"],
+        includes: [
+            "10 HD video lessons",
+            "Printable recipe PDFs",
+            "Baker's percentage calculator",
+            "3 months of community support",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Create and maintain a healthy sourdough starter",
+            "Bake 5 different sourdough bread varieties",
+            "Understand fermentation science and dough behavior",
+            "Achieve consistent open crumb and oven spring",
+        ],
+        ingredientKit: {
+            available: true,
+            price: 35,
+            description:
+                "Includes organic bread flour, whole wheat flour, rye flour, banneton basket, lame scorer, and a dehydrated starter culture.",
+        },
+    },
+
+    {
+        id: 2,
+        title: "Artisan Breads: Baguette, Ciabatta & Focaccia",
+        slug: "artisan-breads-classic",
+        category: "bread",
+        subcategory: "artisan",
+        description:
+            "Dive into the world of classic European artisan breads. Master the high-hydration techniques behind crispy baguettes, airy ciabatta, and flavor-packed focaccia with toppings.",
+        shortDescription:
+            "Learn to bake three iconic European breads with professional techniques.",
+        instructor: {
+            name: "Sofia Marchetti",
+            expertise: "Italian & French Breads",
+            rating: 4.7,
+        },
+        level: "beginner",
+        duration: {
+            total: "12 hours",
+            sessions: 6,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 59,
+            discounted: 59,
+            currency: "USD",
+            hasDiscount: false,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 870,
+        rating: 4.7,
+        reviews: 215,
+        lessons: [
+            {
+                id: 1,
+                title: "High-Hydration Dough Fundamentals",
+                duration: "1 hr 30 min",
+                isFree: true,
+                videoUrl: "/videos/artisan/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Classic French Baguette",
+                duration: "2 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/artisan/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Italian Ciabatta with Biga",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/artisan/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "Focaccia: Classic & Topped Variations",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/artisan/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Olive & Walnut Bread",
+                duration: "1 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/artisan/lesson-05.mp4",
+            },
+            {
+                id: 6,
+                title: "Cold Retard & Flavor Development",
+                duration: "1 hr",
+                isFree: false,
+                videoUrl: "/videos/artisan/lesson-06.mp4",
+            },
+        ],
+        tags: ["baguette", "ciabatta", "focaccia", "high-hydration"],
+        image: "/images/Courses/2.png",
+        isFeatured: true,
+        status: "active",
+        startDate: "2026-10-01",
+        prerequisites: [],
+        includes: [
+            "6 HD video lessons",
+            "Printable recipe PDFs",
+            "Dough temperature guide",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Handle high-hydration doughs with confidence",
+            "Bake authentic baguettes with an open crumb",
+            "Create perfectly airy ciabatta",
+            "Make gourmet focaccia with creative toppings",
+        ],
+        ingredientKit: {
+            available: true,
+            price: 25,
+            description:
+                "Includes Italian 00 flour, bread flour, instant yeast, olive oil, and dried herbs.",
+        },
+    },
+
+    {
+        id: 3,
+        title: "Healthy Breads: Gluten-Free, Keto & High-Protein",
+        slug: "healthy-breads",
+        category: "bread",
+        subcategory: "healthy",
+        description:
+            "Explore the world of health-conscious baking. Learn to create delicious breads that cater to gluten-free, keto, and high-protein diets without sacrificing taste or texture.",
+        shortDescription:
+            "Delicious breads for every diet — gluten-free, keto, and protein-packed.",
+        instructor: {
+            name: "Dr. Emily Nakamura",
+
+            expertise: "Nutritional Baking & Dietary Science",
+            rating: 4.9,
+        },
+        level: "beginner",
+        duration: {
+            total: "10 hours",
+            sessions: 5,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 49,
+            discounted: 39,
+            currency: "USD",
+            hasDiscount: true,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 630,
+        rating: 4.6,
+        reviews: 142,
+        lessons: [
+            {
+                id: 1,
+                title: "Understanding Alternative Flours",
+                duration: "1 hr 30 min",
+                isFree: true,
+                videoUrl: "/videos/healthy/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Gluten-Free Sandwich Loaf",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/healthy/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Keto Cloud Bread & Almond Flour Rolls",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/healthy/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "High-Protein Seed & Grain Bread",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/healthy/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Nutritional Labeling & Macro Calculations",
+                duration: "1 hr",
+                isFree: false,
+                videoUrl: "/videos/healthy/lesson-05.mp4",
+            },
+        ],
+        tags: ["gluten-free", "keto", "healthy", "protein", "dietary"],
+        image: "/images/Courses/3.png",
+        thumbnail: "/courses/healthy-breads-thumb.jpg",
+        isFeatured: false,
+        status: "active",
+        startDate: "2026-09-20",
+        prerequisites: [],
+        includes: [
+            "5 HD video lessons",
+            "Macro-friendly recipe PDFs",
+            "Flour substitution chart",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Bake gluten-free bread with great texture",
+            "Create keto-friendly bread alternatives",
+            "Formulate high-protein bread recipes",
+            "Calculate nutritional values for your bakes",
+        ],
+        ingredientKit: {
+            available: true,
+            price: 40,
+            description:
+                "Includes almond flour, coconut flour, psyllium husk, xanthan gum, flax seeds, and protein powder.",
+        },
+    },
+
+    // ===========================
+    // 🧁 PASTRY & SWEETS DEPARTMENT
+    // ===========================
+    {
+        id: 4,
+        title: "French Pastry Essentials: Macarons, Éclairs & Tarts",
+        slug: "french-pastry-essentials",
+        category: "pastry",
+        subcategory: "french",
+        description:
+            "Unlock the secrets of French pâtisserie. This comprehensive course covers the most iconic French pastries — from perfectly pied macarons to glossy éclairs and elegant fruit tarts.",
+        shortDescription:
+            "Master the holy trinity of French pastry: macarons, éclairs, and fruit tarts.",
+        instructor: {
+            name: "Chef Julien Beaumont",
+
+            expertise: "French Pâtisserie & Chocolate Work",
+            rating: 5.0,
+        },
+        level: "advanced",
+        duration: {
+            total: "24 hours",
+            sessions: 12,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 129,
+            discounted: 99,
+            currency: "USD",
+            hasDiscount: true,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 560,
+        rating: 4.9,
+        reviews: 178,
+        lessons: [
+            {
+                id: 1,
+                title: "Pâte à Choux: The Foundation",
+                duration: "2 hr",
+                isFree: true,
+                videoUrl: "/videos/french/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Classic Éclairs with Pastry Cream",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/french/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Macaron Shells: Italian vs. French Method",
+                duration: "2 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/french/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "Macaron Fillings: Ganache, Buttercream & Curd",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/french/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Pâte Sucrée & Sweet Tart Dough",
+                duration: "1 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/french/lesson-05.mp4",
+            },
+            {
+                id: 6,
+                title: "Fruit Tart with Crème Pâtissière",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/french/lesson-06.mp4",
+            },
+        ],
+        tags: ["french", "macarons", "eclairs", "tarts", "patisserie"],
+        image: "/images/Courses/4.png",
+        thumbnail: "/courses/french-pastry-thumb.jpg",
+        isFeatured: true,
+        status: "active",
+        startDate: "2026-10-10",
+        prerequisites: ["Basic baking experience recommended"],
+        includes: [
+            "12 HD video lessons",
+            "Detailed recipe PDFs with baker's percentages",
+            "Troubleshooting visual guide",
+            "6 months of community access",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Pipe and bake perfect macaron shells every time",
+            "Create professional éclairs with glossy glaze",
+            "Build stunning French fruit tarts",
+            "Master pâte à choux and crème pâtissière",
+        ],
+        ingredientKit: {
+            available: true,
+            price: 55,
+            description:
+                "Includes superfine almond flour, powdered sugar, pastry bags, French tips, silicone macaron mats, and vanilla bean paste.",
+        },
+    },
+
+    {
+        id: 5,
+        title: "Cookie Lab: From NYC-Style to Danish Butter Cookies",
+        slug: "cookie-lab",
+        category: "pastry",
+        subcategory: "cookies",
+        description:
+            "The ultimate cookie course! Explore a world of textures and flavors — from thick, gooey New York-style chocolate chip cookies to delicate Danish butter cookies and everything in between.",
+        shortDescription:
+            "Bake the world's best cookies — chewy, crispy, and everything in between.",
+        instructor: {
+            name: "Mia Johansson",
+
+            expertise: "Cookies, Biscuits & Confections",
+            rating: 4.8,
+        },
+        level: "beginner",
+        duration: {
+            total: "8 hours",
+            sessions: 4,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 39,
+            discounted: 39,
+            currency: "USD",
+            hasDiscount: false,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 1890,
+        rating: 4.8,
+        reviews: 520,
+        lessons: [
+            {
+                id: 1,
+                title: "Cookie Science: Butter, Sugar & Texture",
+                duration: "1 hr 30 min",
+                isFree: true,
+                videoUrl: "/videos/cookies/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "NYC-Style Thick Chocolate Chip Cookies",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cookies/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Danish Butter Cookies & Spritz",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cookies/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "Stuffed & Filled Cookies: Red Velvet & Nutella",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cookies/lesson-04.mp4",
+            },
+        ],
+        tags: ["cookies", "chocolate chip", "butter cookies", "beginner-friendly"],
+        image: "/images/Courses/5.png",
+        isFeatured: false,
+        status: "active",
+        startDate: "2026-09-10",
+        prerequisites: [],
+        includes: [
+            "4 HD video lessons",
+            "Printable recipe PDFs",
+            "Cookie texture comparison chart",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Understand how ingredients affect cookie texture",
+            "Bake bakery-style thick chocolate chip cookies",
+            "Create delicate piped butter cookies",
+            "Experiment with stuffed and filled cookie variations",
+        ],
+        ingredientKit: {
+            available: true,
+            price: 20,
+            description:
+                "Includes premium chocolate chips, Dutch-process cocoa, cookie scoops, and piping tips.",
+        },
+    },
+
+    {
+        id: 6,
+        title: "Cake Foundations: Sponges, Frosting & Decoration",
+        slug: "cake-foundations",
+        category: "pastry",
+        subcategory: "cakes",
+        description:
+            "Build a rock-solid foundation in cake baking. From light-as-air sponge cakes to smooth buttercream finishes and elegant decorating techniques, this course covers it all.",
+        shortDescription:
+            "Everything you need to bake, frost, and decorate stunning cakes.",
+        instructor: {
+            name: "Rachel Okonkwo",
+
+            expertise: "Cake Design & Sugar Art",
+            rating: 4.8,
+        },
+        level: "beginner",
+        duration: {
+            total: "16 hours",
+            sessions: 8,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 79,
+            discounted: 65,
+            currency: "USD",
+            hasDiscount: true,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 1120,
+        rating: 4.7,
+        reviews: 310,
+        lessons: [
+            {
+                id: 1,
+                title: "The Perfect Vanilla Sponge",
+                duration: "2 hr",
+                isFree: true,
+                videoUrl: "/videos/cakes/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Chocolate Cake & Ganache",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Swiss Meringue Buttercream",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "American Buttercream & Flavor Variations",
+                duration: "1 hr 30 min",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Crumb Coat & Smooth Finish Techniques",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-05.mp4",
+            },
+            {
+                id: 6,
+                title: "Piping Basics: Borders, Rosettes & Writing",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-06.mp4",
+            },
+            {
+                id: 7,
+                title: "Drip Cakes & Modern Decoration",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-07.mp4",
+            },
+            {
+                id: 8,
+                title: "Tiered Cake Assembly & Doweling",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/cakes/lesson-08.mp4",
+            },
+        ],
+        tags: ["cake", "frosting", "buttercream", "decoration", "beginner"],
+        image: "/images/Courses/6.png",
+        thumbnail: "/courses/cake-foundations-thumb.jpg",
+        isFeatured: true,
+        status: "active",
+        startDate: "2026-09-25",
+        prerequisites: [],
+        includes: [
+            "8 HD video lessons",
+            "Printable recipe PDFs",
+            "Piping guide printable",
+            "3 months community access",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Bake perfectly leveled sponge cakes",
+            "Make Swiss and American buttercream from scratch",
+            "Achieve a smooth professional finish",
+            "Pipe borders, rosettes, and text",
+            "Assemble a two-tier cake with confidence",
+        ],
+        ingredientKit: {
+            available: true,
+            price: 45,
+            description:
+                "Includes cake flour, vanilla bean paste, gel food colors, piping bags, a set of 12 tips, offset spatula, and bench scraper.",
+        },
+    },
+
+    // ===========================
+    // 🔬 SCIENCE & BUSINESS DEPARTMENT
+    // ===========================
+    {
+        id: 7,
+        title: "The Science of Baking: Why Dough Rises & Crust Browns",
+        slug: "baking-science",
+        category: "science",
+        subcategory: "theory",
+        description:
+            "Ever wondered why bread rises, cookies spread, or crust turns golden? This course dives deep into the chemistry and physics behind baking. Perfect for curious bakers who want to truly understand their craft.",
+        shortDescription:
+            "The chemistry and physics behind every bake — understand the 'why' behind the recipe.",
+        instructor: {
+            name: "Dr. Emily Nakamura",
+
+            expertise: "Nutritional Baking & Dietary Science",
+            rating: 4.9,
+        },
+        level: "all-levels",
+        duration: {
+            total: "14 hours",
+            sessions: 7,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 69,
+            discounted: 69,
+            currency: "USD",
+            hasDiscount: false,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 430,
+        rating: 4.9,
+        reviews: 98,
+        lessons: [
+            {
+                id: 1,
+                title: "Flour Power: Gluten, Protein & Starch",
+                duration: "2 hr",
+                isFree: true,
+                videoUrl: "/videos/science/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Yeast, Baking Soda & Baking Powder: Leavening Agents",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/science/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "The Maillard Reaction & Caramelization",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/science/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "Fats in Baking: Butter, Oil & Shortening",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/science/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Sugar's Many Roles: Beyond Sweetness",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/science/lesson-05.mp4",
+            },
+            {
+                id: 6,
+                title: "Eggs: Structure, Emulsification & Foam",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/science/lesson-06.mp4",
+            },
+            {
+                id: 7,
+                title: "Temperature, Humidity & Altitude Adjustments",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/science/lesson-07.mp4",
+            },
+        ],
+        tags: ["science", "chemistry", "theory", "food-science"],
+        image: "/images/Courses/7.png",
+        thumbnail: "/courses/baking-science-thumb.jpg",
+        isFeatured: false,
+        status: "active",
+        startDate: "2026-10-05",
+        prerequisites: [],
+        includes: [
+            "7 HD video lessons",
+            "Illustrated science notes (PDF)",
+            "Ingredient function cheat sheet",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Understand gluten development at a molecular level",
+            "Predict how ingredient changes affect outcomes",
+            "Troubleshoot bakes using scientific reasoning",
+            "Adapt recipes for altitude and humidity",
+        ],
+        ingredientKit: {
+            available: false,
+            price: null,
+            description: null,
+        },
+    },
+
+    {
+        id: 8,
+        title: "Launch Your Home Bakery: Business, Pricing & Marketing",
+        slug: "home-bakery-business",
+        category: "business",
+        subcategory: "entrepreneurship",
+        description:
+            "Turn your baking passion into a profitable business. This course covers everything from legal requirements and pricing strategies to Instagram marketing and packaging that sells.",
+        shortDescription:
+            "A step-by-step blueprint for launching and growing your home bakery business.",
+        instructor: {
+            name: "Olivia Chen",
+
+            expertise: "Food Business Strategy & Branding",
+            rating: 4.7,
+        },
+        level: "beginner",
+        duration: {
+            total: "12 hours",
+            sessions: 6,
+            sessionLength: "2 hours",
+        },
+        price: {
+            original: 99,
+            discounted: 79,
+            currency: "USD",
+            hasDiscount: true,
+        },
+        format: "online",
+        capacity: null,
+        enrolled: 780,
+        rating: 4.7,
+        reviews: 205,
+        lessons: [
+            {
+                id: 1,
+                title: "Is a Home Bakery Right for You?",
+                duration: "1 hr 30 min",
+                isFree: true,
+                videoUrl: "/videos/business/lesson-01.mp4",
+            },
+            {
+                id: 2,
+                title: "Legal Requirements & Cottage Food Laws",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/business/lesson-02.mp4",
+            },
+            {
+                id: 3,
+                title: "Pricing Your Bakes for Profit",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/business/lesson-03.mp4",
+            },
+            {
+                id: 4,
+                title: "Branding, Logo & Packaging Design",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/business/lesson-04.mp4",
+            },
+            {
+                id: 5,
+                title: "Instagram & Social Media Marketing for Bakers",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/business/lesson-05.mp4",
+            },
+            {
+                id: 6,
+                title: "Scaling Up: From Home Kitchen to Commercial Space",
+                duration: "2 hr",
+                isFree: false,
+                videoUrl: "/videos/business/lesson-06.mp4",
+            },
+        ],
+        tags: ["business", "marketing", "pricing", "home bakery", "entrepreneurship"],
+        image: "/images/Courses/8.png",
+        
+        isFeatured: true,
+        status: "active",
+        startDate: "2026-09-18",
+        prerequisites: [],
+        includes: [
+            "6 HD video lessons",
+            "Pricing spreadsheet template",
+            "Business plan outline (PDF)",
+            "Social media content calendar",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Create a complete business plan for your bakery",
+            "Price your products for sustainable profit",
+            "Build a brand identity and packaging strategy",
+            "Grow your audience on Instagram and social media",
+        ],
+        ingredientKit: {
+            available: false,
+            price: null,
+            description: null,
+        },
+    },
+
+    // ===========================
+    // 🏠 IN-PERSON WORKSHOP
+    // ===========================
+    {
+        id: 9,
+        title: "Weekend Bread BootCamp: Hands-On Workshop",
+        slug: "weekend-bread-bootCamp",
+        category: "bread",
+        subcategory: "workshop",
+        description:
+            "An intensive two-day, in-person workshop at the bakeLab studio. Get your hands in the dough as you bake five different breads alongside our master bakers. Limited to 8 participants for maximum hands-on guidance.",
+        shortDescription:
+            "Two days, five breads, hands-on. An immersive in-person bread baking experience.",
+        instructor: {
+            name: "Daniel Hartwell",
+            expertise: "Artisan Breads & Natural Fermentation",
+            rating: 4.9,
+        },
+        level: "all-levels",
+        duration: {
+            total: "14 hours",
+            sessions: 2,
+            sessionLength: "7 hours",
+        },
+        price: {
+            original: 299,
+            discounted: 249,
+            currency: "USD",
+            hasDiscount: true,
+        },
+        format: "in-person",
+        capacity: 8,
+        enrolled: 6,
+        rating: 5.0,
+        reviews: 24,
+        lessons: [
+            {
+                id: 1,
+                title: "Day 1: Sourdough, Baguette & Focaccia",
+                duration: "7 hr",
+                isFree: false,
+                videoUrl: null,
+            },
+            {
+                id: 2,
+                title: "Day 2: Brioche, Rye & Scoring Masterclass",
+                duration: "7 hr",
+                isFree: false,
+                videoUrl: null,
+            },
+        ],
+        tags: ["workshop", "in-person", "hands-on", "intensive", "bread"],
+        image: "/images/Courses/9.png",
+       
+        isFeatured: true,
+        status: "active",
+        startDate: "2026-10-18",
+        prerequisites: [],
+        includes: [
+            "All ingredients and equipment provided",
+            "Take home everything you bake",
+            "Printed recipe booklet",
+            "BakeLab apron & tote bag",
+            "Lunch both days",
+            "Digital BakeLab certificate",
+        ],
+        outcomes: [
+            "Bake 5 different bread varieties from scratch",
+            "Master shaping, scoring, and baking techniques",
+            "Gain confidence working with various dough types",
+            "Network with fellow baking enthusiasts",
+        ],
+        ingredientKit: {
+            available: false,
+            price: null,
+            description: "All materials provided on-site.",
+        },
+    },
+];
+ export default coursesData
+// ===========================
+// HELPER: Available categories & levels
+// ===========================
+export const categories = [
+    { value: "all", label: "All Courses" },
+    { value: "bread", label: "Bread" },
+    { value: "pastry", label: "Pastry & Sweets" },
+    { value: "science", label: "Baking Science" },
+    { value: "business", label: "Business" },
+];
+
+export const levels = [
+    { value: "all", label: "All Levels" },
+    { value: "beginner", label: "Beginner" },
+    { value: "intermediate", label: "Intermediate" },
+    { value: "advanced", label: "Advanced" },
+    { value: "all-levels", label: "All Levels" },
+];
+
+export const formats = [
+    { value: "all", label: "All Formats" },
+    { value: "online", label: "Online" },
+    { value: "in-person", label: "In-Person" },
+];
