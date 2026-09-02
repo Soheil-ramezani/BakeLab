@@ -1,0 +1,39 @@
+.CourseCard__div{
+     border-radius: 12px;
+}
+.CourseCard__img{
+    border-radius: 12px 12px 0 0;
+}
+.Subscribe_btn {
+  height: 100%;
+  width: fit-content;
+  border: none;
+  border-radius: 15px;
+  color: var(--navy-blue);
+  cursor: pointer;
+  background-color:var(--cream) ;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+.Subscribe_btn:hover {
+  color: var(--cream);
+}
+.arrow {
+  /* display: none; */
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+.Subscribe_btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+.Subscribe_btn:active {
+  transform: scale(0.9);
+}
