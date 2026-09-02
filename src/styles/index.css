@@ -13,6 +13,7 @@ html{
 body{
     background-color: var(--primary-cream);
     font-family: Montserrat;
+    user-select: none;
 }
 h2{
     font-size: clamp(25px,10vw,36px);
