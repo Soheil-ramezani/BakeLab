@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Footer from './components/footer/Footer'
 import HomePage from "./Pages/HomePage/HomePage"
 import CoursesListPage from './Pages/CoursesListPage/CoursesListPage'
+import Course from './Pages/Course/Course'
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
      <Routes>
       <Route path="/Home" element={<HomePage/>} />
       <Route path="/Courses" element={<CoursesListPage/>} />
+      <Route path='/Courses/:courseName' element={<Course/>} />
     </Routes>  
     <Footer/>
    </>
