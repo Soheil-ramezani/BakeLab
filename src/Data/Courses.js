@@ -946,29 +946,209 @@ const coursesData = [
             description: "All materials provided on-site.",
         },
     },
+      // ===========================
+  // 🥐 NEW ADDITIONS (3 Courses)
+  // ===========================
+  {
+    id: 10,
+    title: "Laminated Doughs: Croissants, Danishes & Puff Pastry",
+    slug: "laminated-doughs-masterclass",
+    category: "pastry",
+    subcategory: "advanced-techniques",
+    description:
+      "Master the art of lamination. Learn to create hundreds of buttery, flaky layers for perfect croissants, fruit danishes, and classic puff pastry from scratch. We cover temperature control, folding techniques, and troubleshooting common lamination failures.",
+    shortDescription:
+      "The ultimate guide to creating flaky, buttery, professional-grade laminated doughs.",
+    instructor: {
+      name: "Chef Julien Beaumont",
+      avatar: "/instructors/julien-beaumont.jpg",
+      expertise: "French Pâtisserie & Chocolate Work",
+      rating: 5.0,
+    },
+    level: "advanced",
+    duration: {
+      total: "18 hours",
+      sessions: 9,
+      sessionLength: "2 hours",
+    },
+    price: {
+      original: 119,
+      discounted: 89,
+      currency: "USD",
+      hasDiscount: true,
+    },
+    format: "online",
+    capacity: null,
+    enrolled: 412,
+    rating: 4.9,
+    reviews: 134,
+    lessons: [
+      { id: 1, title: "The Science of Lamination & Butter Selection", duration: "2 hr", isFree: true, videoUrl: "/videos/laminated/lesson-01.mp4" },
+      { id: 2, title: "Making the Detrempe (Base Dough)", duration: "2 hr", isFree: false, videoUrl: "/videos/laminated/lesson-02.mp4" },
+      { id: 3, title: "The Lock-in & First Fold (Letter Fold)", duration: "2 hr", isFree: false, videoUrl: "/videos/laminated/lesson-03.mp4" },
+      { id: 4, title: "Classic Butter Croissants: Shaping & Proofing", duration: "2.5 hr", isFree: false, videoUrl: "/videos/laminated/lesson-04.mp4" },
+      { id: 5, title: "Pain au Chocolat & Almond Croissants", duration: "2 hr", isFree: false, videoUrl: "/videos/laminated/lesson-05.mp4" },
+      { id: 6, title: "Quick Puff Pastry & Fruit Danishes", duration: "2 hr", isFree: false, videoUrl: "/videos/laminated/lesson-06.mp4" },
+      { id: 7, title: "Troubleshooting: Butter Breakage & Poor Oven Spring", duration: "1.5 hr", isFree: false, videoUrl: "/videos/laminated/lesson-07.mp4" },
+    ],
+    tags: ["croissant", "lamination", "puff pastry", "advanced"],
+    image: "/images/Courses/10.png",
+    thumbnail: "/courses/laminated-doughs-thumb.jpg",
+    isFeatured: true,
+    status: "active",
+    startDate: "2026-10-25",
+    prerequisites: ["Basic baking experience", "Understanding of yeast doughs"],
+    includes: [
+      "9 HD video lessons",
+      "Temperature & timing cheat sheet",
+      "Printable recipe PDFs",
+      "Digital BakeLab certificate",
+    ],
+    outcomes: [
+      "Master the lock-in and folding techniques for lamination",
+      "Bake bakery-quality croissants with a honeycomb crumb",
+      "Create versatile puff pastry for sweet and savory applications",
+      "Troubleshoot temperature and gluten issues confidently",
+    ],
+    ingredientKit: {
+      available: true,
+      price: 60,
+      description: "Includes European-style high-fat butter, pastry flour, digital thermometer, and a lamination rolling guide.",
+    },
+  },
+
+  {
+    id: 11,
+    title: "Chocolate Mastery: Tempering, Truffles & Bonbons",
+    slug: "chocolate-mastery",
+    category: "pastry",
+    subcategory: "chocolate",
+    description:
+      "Dive into the science and art of chocolate. Learn proper seeding and tabling tempering techniques, ganache formulations, and how to create stunning, professional-grade bonbons and truffles that rival high-end chocolatiers.",
+    shortDescription:
+      "From bean to bonbon: master the science, tempering, and art of fine chocolate.",
+    instructor: {
+      name: "Chef Julien Beaumont",
+      avatar: "/instructors/julien-beaumont.jpg",
+      expertise: "French Pâtisserie & Chocolate Work",
+      rating: 5.0,
+    },
+    level: "intermediate",
+    duration: {
+      total: "12 hours",
+      sessions: 6,
+      sessionLength: "2 hours",
+    },
+    price: {
+      original: 99,
+      discounted: 99,
+      currency: "USD",
+      hasDiscount: false,
+    },
+    format: "online",
+    capacity: null,
+    enrolled: 580,
+    rating: 4.8,
+    reviews: 167,
+    lessons: [
+      { id: 1, title: "Chocolate Science: Cocoa Butter Crystals", duration: "1.5 hr", isFree: true, videoUrl: "/videos/chocolate/lesson-01.mp4" },
+      { id: 2, title: "Tempering Methods: Seeding vs. Tabling", duration: "2.5 hr", isFree: false, videoUrl: "/videos/chocolate/lesson-02.mp4" },
+      { id: 3, title: "Ganache Formulations & Emulsification", duration: "2 hr", isFree: false, videoUrl: "/videos/chocolate/lesson-03.mp4" },
+      { id: 4, title: "Hand-Rolled Truffles & Coating Techniques", duration: "2 hr", isFree: false, videoUrl: "/videos/chocolate/lesson-04.mp4" },
+      { id: 5, title: "Polycarbonate Molds & Colored Cocoa Butter", duration: "2 hr", isFree: false, videoUrl: "/videos/chocolate/lesson-05.mp4" },
+      { id: 6, title: "Packaging, Shelf Life & Gifting", duration: "2 hr", isFree: false, videoUrl: "/videos/chocolate/lesson-06.mp4" },
+    ],
+    tags: ["chocolate", "tempering", "bonbons", "truffles", "confectionery"],
+    image: "/images/Courses/11.png",
+    thumbnail: "/courses/chocolate-mastery-thumb.jpg",
+    isFeatured: false,
+    status: "active",
+    startDate: "2026-11-05",
+    prerequisites: ["Basic comfort with melting ingredients and precise measurements"],
+    includes: [
+      "6 HD video lessons",
+      "Ganache ratio calculator (PDF)",
+      "Tempering troubleshooting guide",
+      "Digital BakeLab certificate",
+    ],
+    outcomes: [
+      "Perfectly temper chocolate with a glossy snap every time",
+      "Create stable, flavorful ganaches for truffles and bonbons",
+      "Use polycarbonate molds and colored cocoa butter professionally",
+      "Understand chocolate shelf life and proper storage",
+    ],
+    ingredientKit: {
+      available: true,
+      price: 50,
+      description: "Includes couverture chocolate (dark, milk, white), cocoa butter, polycarbonate half-sphere molds, and a digital infrared thermometer.",
+    },
+  },
+
+  {
+    id: 12,
+    title: "Wedding & Event Cakes: Design, Logistics & Pricing",
+    slug: "wedding-event-cakes",
+    category: "business",
+    subcategory: "entrepreneurship",
+    description:
+      "Take your cake business to the luxury market. This course covers the entire lifecycle of a wedding cake order: client consultation, structural design, safe transportation, on-site assembly, and premium pricing strategies.",
+    shortDescription:
+      "The complete blueprint for designing, pricing, and delivering luxury wedding cakes.",
+    instructor: {
+      name: "Rachel Okonkwo",
+      avatar: "/instructors/rachel-okonkwo.jpg",
+      expertise: "Cake Design & Sugar Art",
+      rating: 4.8,
+    },
+    level: "intermediate",
+    duration: {
+      total: "10 hours",
+      sessions: 5,
+      sessionLength: "2 hours",
+    },
+    price: {
+      original: 149,
+      discounted: 119,
+      currency: "USD",
+      hasDiscount: true,
+    },
+    format: "online",
+    capacity: null,
+    enrolled: 320,
+    rating: 4.9,
+    reviews: 88,
+    lessons: [
+      { id: 1, title: "The Consultation: Managing Client Expectations", duration: "2 hr", isFree: true, videoUrl: "/videos/wedding/lesson-01.mp4" },
+      { id: 2, title: "Structural Engineering: Doweling & Support", duration: "2.5 hr", isFree: false, videoUrl: "/videos/wedding/lesson-02.mp4" },
+      { id: 3, title: "Premium Pricing & Contract Essentials", duration: "2 hr", isFree: false, videoUrl: "/videos/wedding/lesson-03.mp4" },
+      { id: 4, title: "Safe Transportation & On-Site Assembly", duration: "2 hr", isFree: false, videoUrl: "/videos/wedding/lesson-04.mp4" },
+      { id: 5, title: "Trendy Designs: Floral, Minimalist & Textured", duration: "1.5 hr", isFree: false, videoUrl: "/videos/wedding/lesson-05.mp4" },
+    ],
+    tags: ["wedding cakes", "business", "luxury", "event planning", "pricing"],
+    image: "/images/Courses/12.png",
+    thumbnail: "/courses/wedding-cakes-thumb.jpg",
+    isFeatured: true,
+    status: "active",
+    startDate: "2026-11-15",
+    prerequisites: ["Completion of Cake Foundations or equivalent experience"],
+    includes: [
+      "5 HD video lessons",
+      "Wedding cake contract template (PDF)",
+      "Pricing calculator spreadsheet",
+      "Transportation safety checklist",
+      "Digital BakeLab certificate",
+    ],
+    outcomes: [
+      "Confidently price and contract high-ticket wedding cakes",
+      "Build structurally sound multi-tier cakes",
+      "Execute safe transportation and flawless on-site assembly",
+      "Attract and manage luxury clientele professionally",
+    ],
+    ingredientKit: {
+      available: false,
+      price: null,
+      description: null,
+    },
+  }
 ];
  export default coursesData
-// ===========================
-// HELPER: Available categories & levels
-// ===========================
-export const categories = [
-    { value: "all", label: "All Courses" },
-    { value: "bread", label: "Bread" },
-    { value: "pastry", label: "Pastry & Sweets" },
-    { value: "science", label: "Baking Science" },
-    { value: "business", label: "Business" },
-];
-
-export const levels = [
-    { value: "all", label: "All Levels" },
-    { value: "beginner", label: "Beginner" },
-    { value: "intermediate", label: "Intermediate" },
-    { value: "advanced", label: "Advanced" },
-    { value: "all-levels", label: "All Levels" },
-];
-
-export const formats = [
-    { value: "all", label: "All Formats" },
-    { value: "online", label: "Online" },
-    { value: "in-person", label: "In-Person" },
-];
