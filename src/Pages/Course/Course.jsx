@@ -167,19 +167,40 @@ export default function Course() {
                         </div>
                         {/* course description  */}
                         <p className={`mt-5 italic`}>{course.shortDescription}</p>
+                        {/* price & enrol button */}
+                        <div className={`w-full flex flex-row items-center justify-between mt-[1%]`}>
+                            <div className={`h-full  flex flex-row text-nowrap gap-2.5 items-center justify-center `}>
+                             <p className="italic">Course Price: </p> 
+                             <p> {`\n`+`$`+course.price.original}</p>  
+                            </div>
+                            <button className={`bg-(--cream) px-10 py-2.5 rounded-xl cursor-pointer self-end mr-[5%] `}> enrol</button>
+                        </div>
+                        
                     </div>
                 </div>
-                {/* second infos */}
-                <div className={`flex flex-row items-start gap-[5%]`}>
-                    {/* instructor */}
-                    <div className={`flex flex-col w-fit px-[2.5%] py-[1.5%]  text-left rounded-2xl bg-(--cream)`}>
-                        <h3 className="italic">instructor</h3>
-                        <hr />
-                        <p>{course.instructor.name}</p>
-                        <p>{course.instructor.expertise}</p>
-                        <p>rating:{course.instructor.rating}</p>
+                {/* second Boxes */}
+                <div className={`flex flex-row items-start gap-[3%]`}>
+                    {/* left col */}
+                    <div className={`flex flex-col gap-[5vh]`}>
+                        {/* instructor */}
+                        <div className={`flex flex-col w-full px-[5%] py-[5%]  text-left rounded-2xl bg-(--cream)`}>
+                            <h3 className="italic">instructor</h3>
+                            <hr />
+                            <p>{course.instructor.name}</p>
+                            <p>{course.instructor.expertise}</p>
+                            <p>rating:{course.instructor.rating}</p>
+                        </div>
+                        {/* time&level */}
+                        <div className={`flex flex-col w-full px-[5%] py-[5%]  text-left rounded-2xl bg-(--cream)`}>
+                            <h3 className="italic">Date & Level</h3>
+                            <hr />
+                            <p>Start date: {course.startDate}</p>
+                            <p>course level: {course.level}</p>
+                        </div>
+
                     </div>
-                    {/* details */}
+
+                    {/* right box */}
                     <div className={`flex flex-col w-fit px-[2.5%] py-[1.5%]  text-left rounded-2xl bg-(--cream)`}>
                         {/* description */}
                         <h3 className="italic text-xl underline">About Course</h3>
@@ -187,11 +208,18 @@ export default function Course() {
                         <hr className={`my-[1.5%]`} />
                         {/* lessons */}
                         <h3 className="italic text-xl underline">What you learn in this course?</h3>
-                        <table>
-                            {course.lessons.map(item => {
-                                return (<tr key={item.id}><td>{item.id}.{item.title}</td> </tr>)
-                            })}
-                        </table>
+                        {course.lessons.map(item => {
+                            return (<p key={item.id}>{item.id}. {item.title}</p>)
+                        })}
+
+                        <hr className={`my-[1.5%]`} />
+                        {/* includes */}
+                        <h3 className="italic text-xl underline">What does this course include?</h3>
+                        {course.includes.map(
+                            item => {
+                                return <p key={course.includes.indexOf(item)}>{course.includes.indexOf(item) + 1}. {item}</p>
+                            }
+                        )}
                         <hr className={`my-[1.5%]`} />
                         {/* prerequisites & outcomes */}
                         <div className="flex flex-row items-start justify-around">
@@ -199,14 +227,14 @@ export default function Course() {
                             <div>
                                 <h3 className="italic text-xl underline">prerequisites</h3>
                                 <p>{course.prerequisites}</p>
-                                </div>
-                                {/* outcomes */}
-                                <div>
-                                  <h3 className="italic text-xl underline">outcomes</h3>
-                                {course.outcomes.map(text=>{
-                                   return(<p key={text.length}>{text}</p>) 
+                            </div>
+                            {/* outcomes */}
+                            <div>
+                                <h3 className="italic text-xl underline">outcomes</h3>
+                                {course.outcomes.map(text => {
+                                    return (<p key={text.length}>{text}</p>)
                                 })}
-                                </div>
+                            </div>
 
                         </div>
 
