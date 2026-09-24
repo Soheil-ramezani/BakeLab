@@ -45,12 +45,12 @@ export default function Course() {
                         <p className={`mt-5 italic`}>{course.shortDescription}</p>
                         <hr className={`my-[1.5%] w-full`} />
                         {/* price & enrol button */}
-                        <div className={`w-full flex flex-row items-center justify-between mt-[1%]`}>
-                            <div className={`h-full  flex flex-row text-nowrap gap-2.5 items-center justify-center `}>
+                        <div className={`w-full flex flex-col sm:flex-row items-center justify-center sm:justify-between mt-[1%]`}>
+                            <div className={`h-full   flex flex-row text-nowrap gap-2.5 items-center justify-center `}>
                                 <p className="italic">Course Price: </p>
                                 <p> {`\n` + `$` + course.price.original}</p>
                             </div>
-                            <button className={`bg-(--cream) px-10 py-2.5 rounded-xl cursor-pointer self-end mr-[5%] `}> enrol</button>
+                            <button className={`bg-(--cream) min-w-[150px] px-10 py-2.5 mt-5 rounded-xl cursor-pointer w-2/5 sm:self-end sm:mr-[5%] text-center `}> enrol</button>
                         </div>
 
                     </div>
