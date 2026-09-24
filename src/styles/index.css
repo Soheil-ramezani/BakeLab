@@ -15,6 +15,9 @@ body{
     font-family: Montserrat;
     user-select: none;
 }
+h1{
+    font-size: clamp(36px,40px,48px);
+}
 h2{
     font-size: clamp(25px,10vw,36px);
 }
