@@ -11,7 +11,7 @@ function App() {
      <Routes>
       <Route path="/Home" element={<HomePage/>} />
       <Route path="/Courses" element={<CoursesListPage/>} />
-      <Route path='/' element={<Course/>} />
+      <Route path='/Courses/:courseSlug' element={<Course/>} />
     </Routes>  
     <Footer/>
    </>

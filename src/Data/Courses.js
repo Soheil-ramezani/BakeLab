@@ -349,7 +349,6 @@ const coursesData = [
             "Master the holy trinity of French pastry: macarons, éclairs, and fruit tarts.",
         instructor: {
             name: "Chef Julien Beaumont",
-
             expertise: "French Pâtisserie & Chocolate Work",
             rating: 5.0,
         },

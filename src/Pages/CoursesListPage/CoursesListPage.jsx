@@ -10,7 +10,7 @@ export default function  CoursesListPage() {
         <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(360px,1fr))]  px-[1%] justify-items-center">
          {
           Courses.map((item)=>{
-            return<CoursesListItem key={item.id} imgsrc={item.image} title={item.title} shortDescription={item.shortDescription} rating={item.rating} enrolled={item.enrolled} price={item.price.original}/>
+            return<CoursesListItem key={item.id} linkSlug={item.slug} imgsrc={item.image} title={item.title} shortDescription={item.shortDescription} rating={item.rating} enrolled={item.enrolled} price={item.price.original}/>
            
           })
          }
