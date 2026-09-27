@@ -9,7 +9,7 @@ function App() {
     <>
     <Navbar/>
      <Routes>
-      <Route path="/Home" element={<HomePage/>} />
+      <Route path="/" element={<HomePage/>} />
       <Route path="/Courses" element={<CoursesListPage/>} />
       <Route path='/Courses/:courseSlug' element={<Course/>} />
     </Routes>  
