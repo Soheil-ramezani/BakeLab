@@ -20,10 +20,11 @@
 .nav_links__li:hover {
   font-size: 17px;
   font-family: MontserratBold;
-  padding: 3px;
+  text-decoration: dashed;
+  /* padding: 3px;
   background-color: var(--navy-blue);
   color: var( --white);
-  border-radius: 8px;
+  border-radius: 8px; */
 }
 
 /*  */
