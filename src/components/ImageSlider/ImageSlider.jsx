@@ -19,7 +19,7 @@ export default function ImageSlider({ images }) {
 
         if (stage === "leaving") {
             timer = setTimeout(() => {
-                setCurrentIndex(currentIndex => (currentIndex + 1) % images.length);
+                setCurrentIndex(Math.floor(Math.random() * 6));
                 setStage("entering");
             }, ANIMATION_TIME);
         }

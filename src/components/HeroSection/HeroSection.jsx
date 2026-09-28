@@ -4,7 +4,7 @@ import HeroSectionPictures from '/src/Data/HeroSectionsPictures'
 import styles from './HeroSection.module.css'
 import { Link } from 'react-router'
 export default function HeroSection() {
-  const [SweetsImages ]= useState(HeroSectionPictures)
+  const [HeroPictures ]= useState(HeroSectionPictures)
   return (
     <section className={`min-h-screen flex flex-row mb-[5%] sm:mb-[1%]  md:px-[1%] items-center `}>
       <div className='w-full md:w-3/5 flex flex-col items-center justify-center'>
@@ -38,12 +38,9 @@ export default function HeroSection() {
        
         </div>
         
-        
-
-
       {/* pictures */}
       <div className={`w-2/5  hidden md:flex items-center justify-center`} >
-        <ImageSlider images={SweetsImages} />
+        <ImageSlider images={HeroPictures} />
       </div>
     </section>
   )
