@@ -1,22 +1,26 @@
 import styles from './CoursesListItem.module.css'
 import { Link } from 'react-router'
 import PropTypes from 'prop-types';
-export default function CoursesListItem({ imgsrc, title, shortDescription, rating, enrolled, price, linkSlug }) {
+export default function CoursesListItem({ imgsrc, title, shortDescription, rating, enrolled, price, linkSlug,showDetails=true  }) {
   return (
 
     <>
       {/* card-box */}
       <div className={`${styles.CourseCard__div} mt-10 mx-5 bg-(--cream)  flex flex-col items-center justify-between w-fit max-w-90 `}>
-        <img src={imgsrc} alt="" className={`${styles.CourseCard__img} w-[100%] h-auto `} loading='lazy' />
+        <img src={imgsrc} alt="" className={`${styles.CourseCard__img} w-full h-auto `} loading='lazy' />
         {/* texts */}
         <div className={`${styles.CourseCard_texts} px-2.5`}>
           {/* title */}
           <h5 className={`text-base font-bold mt-5`}>{title}</h5>
           {/* detail */}
           <p className={`text-(--gray) text-wrap mb-10`}>{shortDescription}</p>
+          
+            
+          
           {/* star */}
-          <div className={`flex flex-row items-center justify-between px-[1%]`}>
-            {/* star */}
+          { showDetails &&
+            <div className={`flex flex-row items-center justify-between px-[1%]`}>
+      
             <div className={`flex flex-row items-center justify-start gap-1`}>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#050706" stroke="#050706" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
               <span> {rating}</span>
@@ -27,11 +31,12 @@ export default function CoursesListItem({ imgsrc, title, shortDescription, ratin
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
               <p>{enrolled}</p>
             </div>
-          </div>
+          </div>}
 
 
           {/* Price & more btn */}
-          <div className={`flex flex-row items-center justify-between border-t-2 border-t-(--gray) py-2.5 px-1 `} >
+           {showDetails && 
+           <div className={`flex flex-row items-center justify-between border-t-2 border-t-(--gray) py-2.5 px-1 `} >
             <p> {price}$</p>
             <Link to={`/Courses/${linkSlug}`} className={`${styles.Subscribe_btn}`}>
               <svg
@@ -47,7 +52,7 @@ export default function CoursesListItem({ imgsrc, title, shortDescription, ratin
                 ></path></svg>
               More
             </Link>
-          </div>
+          </div>}
         </div>
       </div>
     </>
@@ -64,4 +69,5 @@ CoursesListItem.propTypes = {
   rating: PropTypes.number,
   enrolled: PropTypes.number,
   price: PropTypes.number,
+  showDetails:PropTypes.bool,
 };
